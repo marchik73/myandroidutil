@@ -62,7 +62,7 @@ public class CrashUtils implements Thread.UncaughtExceptionHandler {
         mInitialized = true;
 	
 
-	String myTimeString = "test error2";
+	String myTimeString3 = "test error3";
 
 
         mContext = context;
@@ -78,6 +78,9 @@ public class CrashUtils implements Thread.UncaughtExceptionHandler {
         } else {
             dir = mContext.getCacheDir().getPath();
         }
+
+	String myTimeString2 = "test error2";
+
         String fullPath = dir + File.separator + "crash_" + TimeUtils.getCurTimeString() + ".txt";
         if (!FileUtils.createOrExistsFile(fullPath)) return;
         StringBuilder sb = new StringBuilder();
